@@ -36,6 +36,7 @@
   <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
+  <div class="bg" aria-hidden="true"></div>
   <a class="skip" href="#main">Skip to content</a>
   <header class="header">
     <a class="brand" href="#top" aria-label="hanagumori — home">
@@ -51,7 +52,11 @@
   <main id="main">
     <section class="hero" id="top">
       <div class="wrap">
-        <p class="eyebrow">Frontend developer &amp; software engineer</p>
+        <div class="term" id="term" role="img" aria-label="Terminal: whoami. hanagumori — frontend developer and software engineer.">
+          <div class="term-bar" aria-hidden="true"><i></i><i></i><i></i><span>~/portfolio</span></div>
+          <p class="term-line" aria-hidden="true"><span class="prompt">$</span> <span id="term-cmd" data-text="whoami">whoami</span><span class="caret"></span></p>
+          <p class="term-out" id="term-out" aria-hidden="true">hanagumori — frontend developer &amp; software engineer</p>
+        </div>
         <h1>Fast, polished websites and Telegram bots for your business.</h1>
         <p class="lead">I design and build responsive websites and automation with React, TypeScript and Python — from the first sketch to a live launch.</p>
         <div class="actions">
@@ -71,7 +76,8 @@
         <p class="note">Northside and Haven are concept projects: practice briefs for fictional local businesses.</p>
         <div class="grid work">
           <article class="card project reveal">
-            <a class="shot" href="https://northside-auto-repair.vercel.app" target="_blank" rel="noopener noreferrer" aria-label="Open Northside Auto Repair">
+            <a class="shot browser" href="https://northside-auto-repair.vercel.app" target="_blank" rel="noopener noreferrer" aria-label="Open Northside Auto Repair">
+              <span class="bar" aria-hidden="true"><i></i><i></i><i></i><b>northside-auto-repair.vercel.app</b></span>
               <img src="/work/northside.webp" width="1280" height="800" loading="lazy" decoding="async" alt="Northside Auto Repair landing page with a services grid on a dark background" />
             </a>
             <div class="body">
@@ -82,7 +88,8 @@
             </div>
           </article>
           <article class="card project reveal">
-            <a class="shot" href="https://haven-dental.vercel.app" target="_blank" rel="noopener noreferrer" aria-label="Open Haven Dental">
+            <a class="shot browser" href="https://haven-dental.vercel.app" target="_blank" rel="noopener noreferrer" aria-label="Open Haven Dental">
+              <span class="bar" aria-hidden="true"><i></i><i></i><i></i><b>haven-dental.vercel.app</b></span>
               <img src="/work/haven.webp" width="1280" height="800" loading="lazy" decoding="async" alt="Haven Dental landing page with a headline and a consultation card" />
             </a>
             <div class="body">
@@ -93,7 +100,8 @@
             </div>
           </article>
           <article class="card project reveal">
-            <a class="shot" href="https://ceo-six-phi.vercel.app" target="_blank" rel="noopener noreferrer" aria-label="Open the interactive 3D workshop">
+            <a class="shot browser" href="https://ceo-six-phi.vercel.app" target="_blank" rel="noopener noreferrer" aria-label="Open the interactive 3D workshop">
+              <span class="bar" aria-hidden="true"><i></i><i></i><i></i><b>ceo-six-phi.vercel.app</b></span>
               <img src="/work/workshop.webp" width="1280" height="720" loading="lazy" decoding="async" alt="A red and gold armor suspended on chains in a dark 3D workshop" />
             </a>
             <div class="body">
