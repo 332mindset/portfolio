@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 
 // Update SITE_URL once the final domain is known; it feeds canonical/OG tags,
 // robots.txt and sitemap.xml.
-const SITE_URL = 'https://hanagumori.vercel.app';
+const SITE_URL = 'https://portfolio-gilt-three-30.vercel.app';
 
 export default defineConfig({
   plugins: [{
